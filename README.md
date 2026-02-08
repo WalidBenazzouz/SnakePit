@@ -8,6 +8,8 @@
 
 **Un jeu de serpent multijoueur implémentant les comportements de pilotage autonome de Craig Reynolds**
 
+![Gameplay Screenshot](assets/screenshots/gameplay.png)
+
 </div>
 
 ---
