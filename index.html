@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SnakePit</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="skins.js?v=10"></script>
+  <script src="snake.js?v=10"></script>
+  <script src="bot.js?v=10"></script>
+  <script src="food.js?v=10"></script>
+  <script src="background.js?v=10"></script>
+  <script src="sketch.js?v=10"></script>
+</head>
+
+<body>
+  <div id="ui-container">
+    <div id="start-menu">
+      <h1>SnakePit</h1>
+      <input type="text" id="nickname" placeholder="Nickname" maxlength="10">
+
+      <div style="margin: 15px 0; width: 100%;">
+        <select id="skin-select"
+          style="width: 100%; padding: 12px; border-radius: 5px; background: rgba(10, 25, 47, 0.8); color: #00ffcc; border: 1px solid #00ffcc; font-family: 'Courier New', monospace; font-size: 16px; cursor: pointer; outline: none;">
+          <option value="1">🌈 Rainbow Stripes</option>
+          <option value="2">🌀 Plasma Vortex</option>
+          <option value="3">⚡ Electric Cells</option>
+          <option value="4">✨ Starfield Glitter</option>
+          <option value="5">💧 Water Surface</option>
+          <option value="6">☀️ Sun Surface</option>
+          <option value="7">💨 Smoke</option>
+          <option value="8">🏜️ Granular Ground</option>
+        </select>
+      </div>
+
+      <button id="play-btn">PLAY</button>
+    </div>
+    <div id="game-over-menu" style="display: none;">
+      <h1>GAME OVER</h1>
+      <p id="final-score">Length: 0</p>
+      <button id="restart-btn">PLAY AGAIN</button>
+    </div>
+
+    <!-- Help Panel -->
+    <div id="help-panel">
+      <div class="help-title">🎮 Controls</div>
+      <div class="help-item"><kbd>Mouse</kbd> Direction</div>
+      <div class="help-item"><kbd>Click</kbd> Boost (uses length)</div>
+      <div class="help-item"><kbd>D</kbd> Debug Mode</div>
+      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.2);margin:6px 0;">
+      <div class="help-title">🐍 Behaviors</div>
+      <div class="help-item">• Seek: Follow cursor</div>
+      <div class="help-item">• Arrive: Slow near food</div>
+      <div class="help-item">• Containment: Stay in bounds</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+# Project Rules
+
+## General Guidelines
+- Use P5.js for development.
+- Implement behavior patterns following Craig Reynolds' steering behaviors principles.
+
+## Architecture & Constraints
+- **CRITICAL**: Do NOT modify `vehicle.js`. This file contains the base properties and behaviors for all vehicles and must remain defining the common interface.
+- To implement specific behaviors or new entity types, you MUST create a subclass that extends `Vehicle`.
+- Specialize and override methods like `show()`, `applyBehaviors()`, `update()`, etc., in the subclasses as needed.
